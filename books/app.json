@@ -1,3 +1,35 @@
 {
-    "stack" : "heroku-20"
+    "environments": {
+        "production": {
+        "buildpacks": [
+            {
+            "url": "heroku/ruby"
+            },
+            {
+            "url": "heroku/nodejs"
+            }
+        ]
+        },
+        "staging": {
+        "buildpacks": [
+            {
+            "url": "heroku/ruby"
+            },
+            {
+            "url": "heroku/nodejs"
+            }
+        ]
+        },
+        "test": {
+        "buildpacks": [
+            {
+            "url": "heroku/ruby"
+            },
+            {
+            "url": "heroku/nodejs"
+            }
+        ]
+        }
+    }
 }
+  
